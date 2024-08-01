@@ -25,12 +25,12 @@ const Product1 = () => {
     }
   }, [location.search]);
 
-  const handleFilter = () => {
+  useEffect(() => {
     const result = FRAME.filter(product =>
       product.productname && product.productname.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setFilteredProducts(result);
-  };
+  }, [searchQuery]);
 
   return (
     <div className='shop'>
@@ -44,12 +44,6 @@ const Product1 = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className='p-2 border border-gray-400 rounded-l-md w-3/4 md:w-1/2 lg:w-1/3'
           />
-          <button
-            onClick={handleFilter}
-            className='bg-blue-500 text-white p-2 rounded-r-md border border-gray-400 border-l-0 hover:bg-blue-600 transition duration-150 ease-in-out'
-          >
-            Filter
-          </button>
         </div>
       </div>
       <div className='product-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-6 mx-auto'>

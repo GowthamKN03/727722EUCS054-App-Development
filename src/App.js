@@ -17,6 +17,7 @@ import RemoveProduct from './admin/RemoveProduct';
 import ProductList from './admin/ProductList';
 import Dashboard from './admin/Dashboard';
 import AdminLogin from './Authentication/AdminLogin';
+import PersonalizeGift from './home/PersonalizeGift';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/fav" element={<Fav />} />
             <Route path="/frames" element={<Product1 />} />
-            <Route path="/cust" element={<Custom/>} />
+            <Route path="/custom" element={<Custom/>} />
             <Route path="/pay" element={<Pay />} />
             <Route path="/receipt" element={<Receipt/>} />
             <Route path="/product/:id/review" element={<Review />} /> {/* Add review page route */}
@@ -40,6 +41,7 @@ function App() {
             <Route path="/add-product" element={<AddProduct />} />
           <Route path="/remove-product" element={<RemoveProduct />} />
           <Route path="/product-list" element={<ProductList />} />
+          <Route path="/personalize" element={<PersonalizeGift />} />
 
           <Route path='/admin-login' element={<AdminLogin/>}/>
           </Routes>
