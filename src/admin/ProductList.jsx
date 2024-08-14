@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // src/components/ProductList.jsx
+=======
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 import React from 'react';
 
 const ProductList = ({ products = [] }) => {

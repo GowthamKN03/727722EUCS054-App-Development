@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -30,11 +35,19 @@ const Services = () => {
 
   const handleCardClick = (serviceName) => {
     if (serviceName === "Watches") {
+<<<<<<< HEAD
       navigate('/frames?scrollTo=13');
     } else if (serviceName === "Photo Frames") {
       navigate('/frames?scrollTo=1');
     } else if (serviceName === "Bracelets") {
       navigate('/frames?scrollTo=25');
+=======
+      navigate('/frames?scrollTo=13'); 
+    } else if (serviceName === "Photo Frames") {
+      navigate('/frames?scrollTo=1'); 
+    } else if (serviceName === "Bracelets") {
+      navigate('/frames?scrollTo=25'); 
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
     }
   };
 

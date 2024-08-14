@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // src/components/RemoveProduct.jsx
+=======
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 import React, { useState } from 'react';
 
 const RemoveProduct = ({ removeProduct }) => {
@@ -6,10 +9,15 @@ const RemoveProduct = ({ removeProduct }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+<<<<<<< HEAD
     if (productId) {
       removeProduct(parseInt(productId));
       setProductId('');
     }
+=======
+    removeProduct(parseInt(productId));
+    setProductId('');
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
   };
 
   return (
@@ -17,9 +25,13 @@ const RemoveProduct = ({ removeProduct }) => {
       <h2 className="text-2xl font-semibold mb-4 text-gray-800">Remove Product</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
+<<<<<<< HEAD
           <label htmlFor="product-id" className="block text-sm font-medium text-gray-700 mb-1">
             Product ID
           </label>
+=======
+          <label htmlFor="product-id" className="block text-sm font-medium text-gray-700 mb-1">Product ID</label>
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
           <input
             id="product-id"
             type="number"

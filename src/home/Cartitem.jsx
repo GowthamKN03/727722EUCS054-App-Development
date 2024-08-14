@@ -1,14 +1,27 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 import React, { useContext } from 'react';
 import { ShopContext } from '../context/Product1_context';
 
 const CartItem = (props) => {
   const { id, productname, price, productimage } = props.data;
+<<<<<<< HEAD
   const { cartItems, addToCart, removeFromCart, updateCartItem } = useContext(ShopContext);
+=======
+  const { cartItems, addToCart, removeFromCart, updatecartitem } = useContext(ShopContext);
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 
   const handleInputChange = (e) => {
     const newAmount = Number(e.target.value);
     if (newAmount >= 0) {
+<<<<<<< HEAD
       updateCartItem(newAmount, id);
+=======
+      updatecartitem(newAmount, id);
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
     }
   };
 
@@ -29,7 +42,11 @@ const CartItem = (props) => {
         <input
           className="w-12 text-center font-bold border border-gray-300 rounded-md p-1 mx-2"
           type="number"
+<<<<<<< HEAD
           value={cartItems[id] || 0}
+=======
+          value={cartItems[id]}
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
           onChange={handleInputChange}
           min="0"
         />
@@ -45,3 +62,7 @@ const CartItem = (props) => {
 };
 
 export default CartItem;
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906

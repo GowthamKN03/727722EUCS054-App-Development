@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ShopContext } from '../context/Product1_context';
@@ -5,7 +11,11 @@ import { FaStar } from 'react-icons/fa'; // Import FontAwesome star icons
 
 const Review = () => {
   const { id } = useParams();
+<<<<<<< HEAD
   const { reviews, addReview, FRAME = [] } = useContext(ShopContext); // Ensure FRAME has a default value
+=======
+  const { reviews, addReview, FRAME } = useContext(ShopContext);
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
   const [newReview, setNewReview] = useState('');
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(null);
@@ -90,4 +100,8 @@ const Review = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Review;
+=======
+export default Review;
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906

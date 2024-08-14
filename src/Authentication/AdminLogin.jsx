@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // import React, { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
 // import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
@@ -71,6 +72,8 @@
 
 // export default AdminLogin;
 
+=======
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
@@ -98,10 +101,14 @@ const AdminLogin = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div 
       className="flex items-center justify-center min-h-screen"
       style={{ backgroundImage: 'url(https://img.freepik.com/free-vector/abstract-realistic-particle-background_23-2148409681.jpg?size=626&ext=jpg&ga=GA1.1.195038459.1722242882&semt=ais_hybrid)', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
+=======
+    <div className="flex items-center justify-center min-h-screen bg-black">
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
         <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
         <form onSubmit={handlesubmit}>
@@ -146,3 +153,7 @@ const AdminLogin = () => {
 
 export default AdminLogin;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906

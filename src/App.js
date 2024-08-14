@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // // src/App.js
 // import './App.css';
@@ -172,6 +173,8 @@
 // }
 
 // export default App;
+=======
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 // src/App.js
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -189,6 +192,7 @@ import Receipt from './Payment/Receipt';
 import AddProduct from './admin/AddProduct';
 import RemoveProduct from './admin/RemoveProduct';
 import ProductList from './admin/ProductList';
+<<<<<<< HEAD
 import AdminLogin from './Authentication/AdminLogin';
 import PersonalizeGift from './home/PersonalizeGift';
 import AdminDashboard from './admin1/AdminDashboard';
@@ -199,6 +203,11 @@ import CheckoutPage from './Payment/CheckoutPage';
 import Admina from './admin/Admina';
 import AdminSettings from './admin1/Adminsetting';
 import Usermanagement from './admin1/Usermanagement';
+=======
+import Dashboard from './admin/Dashboard';
+import AdminLogin from './Authentication/AdminLogin';
+import PersonalizeGift from './home/PersonalizeGift';
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 
 function App() {
   return (
@@ -214,18 +223,26 @@ function App() {
             <Route path="/fav" element={<Fav />} />
             <Route path="/frames" element={<Product1 />} />
             <Route path="/custom" element={<Custom/>} />
+<<<<<<< HEAD
             <Route path="/checkout" element={<CheckoutPage />} />
+=======
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
             <Route path="/pay" element={<Pay />} />
             <Route path="/receipt" element={<Receipt/>} />
             <Route path="/product/:id/review" element={<Review />} /> {/* Add review page route */}
             <Route path="/buy" element={<Custom/>}></Route>
+<<<<<<< HEAD
             
+=======
+            <Route path='/admin' element={<Dashboard/>}/>
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
             <Route path="/add-product" element={<AddProduct />} />
           <Route path="/remove-product" element={<RemoveProduct />} />
           <Route path="/product-list" element={<ProductList />} />
           <Route path="/personalize" element={<PersonalizeGift />} />
 
           <Route path='/admin-login' element={<AdminLogin/>}/>
+<<<<<<< HEAD
           <Route path='/admin' element={<AdminDashboard/>} />
           <Route path='/seller' element={<Seller/>} />
           <Route path='/sellerlogin'  element={<SellerPage/>}/>
@@ -242,4 +259,14 @@ function App() {
 }
 
  export default App;
+=======
+          </Routes>
+        </Router>
+      </Product1Context>
+    </div>
+  );
+}
+
+export default App;
+>>>>>>> ca1764e3b50da736bc9786cc9a0f5f60d9a98906
 
